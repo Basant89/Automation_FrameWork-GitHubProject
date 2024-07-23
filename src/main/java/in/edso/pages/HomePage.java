@@ -45,57 +45,30 @@ public class HomePage extends WebTestBase {
 
 
     //Calling constructor to initialize all Web element existing in HomePage.
-
     public HomePage(){
+        PageFactory.initElements(driver, this);}
 
-        PageFactory.initElements(driver, this);
-    }
 
     //Function for closing add with clicked on User logo icon in home page.
-
     public void closeFirstAd(){
         CommonWaits.waitUtilElementToBeClickable(closeFirstAd);
         CommonWaits.waitUtilElementToBeClickable(userLogo);
     }
 
-    //Function for closing add with-out clicked on User logo icon in home page.
 
-    public void closeFirstAdWithOutClickedUserLogo(){
-        CommonWaits.waitUtilElementToBeClickable(closeFirstAd);
-    }
+    //Function for closing add with-out clicked on User logo icon in home page.
+    public void closeFirstAdWithOutClickedUserLogo(){CommonWaits.waitUtilElementToBeClickable(closeFirstAd);}
+
 
     //Functions for click on each menu Tabs.
-    public void clickOnCafeFinderTab(){
-        CommonWaits.waitUtilElementToBeClickable(cafeFinderTab);
-    }
-
-    public void clickOurStoryTab(){
-        CommonWaits.waitUtilElementToBeClickable(ourStoryTab);
-    }
-
-    public void clickShopTabTab(){
-        CommonWaits.waitUtilElementToBeClickable(shopTab);
-    }
-
-    public void clickSubscriptionsTab(){
-        CommonWaits.waitUtilElementToBeClickable(subscriptionsTab);
-    }
-
-    public void clickBrewGuidesTab(){
-        CommonWaits.waitUtilElementToBeClickable(brewGuidesTab);
-    }
-
-    public void clickNewsTab(){
-        CommonWaits.waitUtilElementToBeClickable(newsTab);
-    }
-
-    public void clickWholesaleTab(){
-        CommonWaits.waitUtilElementToBeClickable(wholesaleTab);
-    }
-
-    public void clickWoolWorthsCompTab(){
-        CommonWaits.waitUtilElementToBeClickable(woolWorthsCompTab);
-    }
+    public void clickOnCafeFinderTab(){CommonWaits.waitUtilElementToBeClickable(cafeFinderTab);}
+    public void clickOurStoryTab(){CommonWaits.waitUtilElementToBeClickable(ourStoryTab);}
+    public void clickShopTabTab(){CommonWaits.waitUtilElementToBeClickable(shopTab);}
+    public void clickSubscriptionsTab(){CommonWaits.waitUtilElementToBeClickable(subscriptionsTab);}
+    public void clickBrewGuidesTab(){CommonWaits.waitUtilElementToBeClickable(brewGuidesTab);}
+    public void clickNewsTab(){CommonWaits.waitUtilElementToBeClickable(newsTab);}
+    public void clickWholesaleTab(){CommonWaits.waitUtilElementToBeClickable(wholesaleTab);}
+    public void clickWoolWorthsCompTab(){CommonWaits.waitUtilElementToBeClickable(woolWorthsCompTab);}
 
 
 }
